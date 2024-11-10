@@ -39,5 +39,5 @@ if uploaded_file is not None:
     model.show_result(file_loc, result, ('Bordered', 'cell', 'Borderless'), score_thr=0.85, show=False)
 
     # Đọc và hiển thị ảnh kết quả từ mô hình
-    result_img = Image.open(file_loc)  # Đọc lại ảnh đã được mô hình chỉnh sửa
+    result_img = Image.open(file_loc)
     st.image(result_img, caption='Detection Result', use_column_width=True)
